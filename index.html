@@ -12,107 +12,117 @@
     <main class="main-container container">
         <div class="row d-flex align-items-center">
             <div class="col-12 col-lg-6 title-and-controls d-flex align-items-center flex-column">
+                <img src="./img/knight-svgrepo-com.svg" alt="Knight Icon" width="80px">
+                <br>
                 <h1>Knights Travails</h1>
-                <button class="btn btn-lg btn-primary">
-                    Place Knight
-                </button>
-                <button class="btn btn-lg btn-primary">
-                    Create Random Knight
-                </button>
-                <button class="btn btn-lg btn-primary">
+                <div class="row buttons-first-row">
+                    <div class="col">
+                        <button class="btn btn-lg btn-primary" id="place-knight">
+                            Place Knight
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-lg btn-primary" id="random-knight">
+                            Create Random Knight
+                        </button>
+                    </div>
+                </div>
+                <button class="btn btn-lg btn-primary" id="select-end">
                     Select End
                 </button>
 
-                <button class="btn btn-lg btn-primary">
+                <button class="btn btn-lg btn-primary" id="travail">
                     Travail
                 </button>
-                <button class="btn btn-lg btn-danger">
+                <button class="btn btn-lg btn-danger" id="clear">
                     Clear
                 </button>
             </div>
-            <div class="col-12 col-lg-6 game-board d-flex flex-column align-items-center">
+            <div class="col-12 col-lg-6 game-board d-flex flex-column-reverse align-items-center">
                 <div class="row" id="r-0">
-                    <div class="space col" id="s-0"></div>
-                    <div class="space col" id="s-1"></div>
-                    <div class="space col" id="s-2"></div>
-                    <div class="space col" id="s-3"></div>
-                    <div class="space col" id="s-4"></div>
-                    <div class="space col" id="s-5"></div>
-                    <div class="space col" id="s-6"></div>
-                    <div class="space col" id="s-7"></div>
+                    <div class="space col" class="s-0"></div>
+                    <div class="space col" class="s-1"></div>
+                    <div class="space col" class="s-2"></div>
+                    <div class="space col" class="s-3"></div>
+                    <div class="space col" class="s-4"></div>
+                    <div class="space col" class="s-5"></div>
+                    <div class="space col" class="s-6"></div>
+                    <div class="space col" class="s-7"></div>
                 </div>
                 <div class="row" id="r-1">
-                    <div class="space col" id="s-0"></div>
-                    <div class="space col" id="s-1"></div>
-                    <div class="space col" id="s-2"></div>
-                    <div class="space col" id="s-3"></div>
-                    <div class="space col" id="s-4"></div>
-                    <div class="space col" id="s-5"></div>
-                    <div class="space col" id="s-6"></div>
-                    <div class="space col" id="s-7"></div>
+                    <div class="space col" class="s-0"></div>
+                    <div class="space col" class="s-1"></div>
+                    <div class="space col" class="s-2"></div>
+                    <div class="space col" class="s-3"></div>
+                    <div class="space col" class="s-4"></div>
+                    <div class="space col" class="s-5"></div>
+                    <div class="space col" class="s-6"></div>
+                    <div class="space col" class="s-7"></div>
                 </div>
                 <div class="row" id="r-2">
-                    <div class="space col" id="s-0"></div>
-                    <div class="space col" id="s-1"></div>
-                    <div class="space col" id="s-2"></div>
-                    <div class="space col" id="s-3"></div>
-                    <div class="space col" id="s-4"></div>
-                    <div class="space col" id="s-5"></div>
-                    <div class="space col" id="s-6"></div>
-                    <div class="space col" id="s-7"></div>
+                    <div class="space col" class="s-0"></div>
+                    <div class="space col" class="s-1"></div>
+                    <div class="space col" class="s-2"></div>
+                    <div class="space col" class="s-3"></div>
+                    <div class="space col" class="s-4"></div>
+                    <div class="space col" class="s-5"></div>
+                    <div class="space col" class="s-6"></div>
+                    <div class="space col" class="s-7"></div>
                 </div>
                 <div class="row" id="r-3">
-                    <div class="space col" id="s-0"></div>
-                    <div class="space col" id="s-1"></div>
-                    <div class="space col" id="s-2"></div>
-                    <div class="space col" id="s-3"></div>
-                    <div class="space col" id="s-4"></div>
-                    <div class="space col" id="s-5"></div>
-                    <div class="space col" id="s-6"></div>
-                    <div class="space col" id="s-7"></div>
+                    <div class="space col" class="s-0"></div>
+                    <div class="space col" class="s-1"></div>
+                    <div class="space col" class="s-2"></div>
+                    <div class="space col" class="s-3"></div>
+                    <div class="space col" class="s-4"></div>
+                    <div class="space col" class="s-5"></div>
+                    <div class="space col" class="s-6"></div>
+                    <div class="space col" class="s-7"></div>
                 </div>
                 <div class="row" id="r-4">
-                    <div class="space col" id="s-0"></div>
-                    <div class="space col" id="s-1"></div>
-                    <div class="space col" id="s-2"></div>
-                    <div class="space col" id="s-3"></div>
-                    <div class="space col" id="s-4"></div>
-                    <div class="space col" id="s-5"></div>
-                    <div class="space col" id="s-6"></div>
-                    <div class="space col" id="s-7"></div>
+                    <div class="space col" class="s-0"></div>
+                    <div class="space col" class="s-1"></div>
+                    <div class="space col" class="s-2"></div>
+                    <div class="space col" class="s-3"></div>
+                    <div class="space col" class="s-4"></div>
+                    <div class="space col" class="s-5"></div>
+                    <div class="space col" class="s-6"></div>
+                    <div class="space col" class="s-7"></div>
                 </div>
                 <div class="row" id="r-5">
-                    <div class="space col" id="s-0"></div>
-                    <div class="space col" id="s-1"></div>
-                    <div class="space col" id="s-2"></div>
-                    <div class="space col" id="s-3"></div>
-                    <div class="space col" id="s-4"></div>
-                    <div class="space col" id="s-5"></div>
-                    <div class="space col" id="s-6"></div>
-                    <div class="space col" id="s-7"></div>
+                    <div class="space col" class="s-0"></div>
+                    <div class="space col" class="s-1"></div>
+                    <div class="space col" class="s-2"></div>
+                    <div class="space col" class="s-3"></div>
+                    <div class="space col" class="s-4"></div>
+                    <div class="space col" class="s-5"></div>
+                    <div class="space col" class="s-6"></div>
+                    <div class="space col" class="s-7"></div>
                 </div>
                 <div class="row" id="r-6">
-                    <div class="space col" id="s-0"></div>
-                    <div class="space col" id="s-1"></div>
-                    <div class="space col" id="s-2"></div>
-                    <div class="space col" id="s-3"></div>
-                    <div class="space col" id="s-4"></div>
-                    <div class="space col" id="s-5"></div>
-                    <div class="space col" id="s-6"></div>
-                    <div class="space col" id="s-7"></div>
+                    <div class="space col" class="s-0"></div>
+                    <div class="space col" class="s-1"></div>
+                    <div class="space col" class="s-2"></div>
+                    <div class="space col" class="s-3"></div>
+                    <div class="space col" class="s-4"></div>
+                    <div class="space col" class="s-5"></div>
+                    <div class="space col" class="s-6"></div>
+                    <div class="space col" class="s-7"></div>
                 </div>
                 <div class="row" id="r-7">
-                    <div class="space col" id="s-0"></div>
-                    <div class="space col" id="s-1"></div>
-                    <div class="space col" id="s-2"></div>
-                    <div class="space col" id="s-3"></div>
-                    <div class="space col" id="s-4"></div>
-                    <div class="space col" id="s-5"></div>
-                    <div class="space col" id="s-6"></div>
-                    <div class="space col" id="s-7"></div>
+                    <div class="space col" class="s-0"></div>
+                    <div class="space col" class="s-1"></div>
+                    <div class="space col" class="s-2"></div>
+                    <div class="space col" class="s-3"></div>
+                    <div class="space col" class="s-4"></div>
+                    <div class="space col" class="s-5"></div>
+                    <div class="space col" class="s-6"></div>
+                    <div class="space col" class="s-7"></div>
                 </div>
             </div>
         </div>
     </main>
+
+    <script src="js/app.js" type="module"></script>
 </body>
 </html>

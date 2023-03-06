@@ -25,7 +25,7 @@ h1, h2 {
   border: 1px solid #6f929e;
 }
 
-.btn-primary:hover, .btn-primary:active, .btn-primary:focus-visible {
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus-visible, .btn-primary.active {
   background-color: transparent !important;
   color: black !important;
   border: 1px solid #6f929e !important;
@@ -48,6 +48,10 @@ h1, h2 {
   width: 60%;
 }
 
+.main-container .row .title-and-controls .buttons-first-row button {
+  width: 100%;
+}
+
 .main-container .row .game-board {
   margin: auto;
   height: 85%;
@@ -67,6 +71,19 @@ h1, h2 {
   width: 50%;
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .row .game-board .row .space img {
+  width: 80%;
 }
 
 .main-container .row .game-board .row .space:hover {
@@ -74,7 +91,7 @@ h1, h2 {
 }
 
 .main-container .row .game-board .row:nth-child(odd) .space:nth-child(odd) {
-  background-color: black;
+  background-color: #5a5959;
 }
 
 .main-container .row .game-board .row:nth-child(odd) .space:nth-child(odd):hover {
@@ -90,7 +107,7 @@ h1, h2 {
 }
 
 .main-container .row .game-board .row:nth-child(even) .space:nth-child(even) {
-  background-color: black;
+  background-color: #5a5959;
 }
 
 .main-container .row .game-board .row:nth-child(even) .space:nth-child(even):hover {
