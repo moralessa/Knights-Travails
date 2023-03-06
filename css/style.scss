@@ -64,6 +64,10 @@ h1, h2{
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    transition: all 250ms ease-in-out;
+                    &.selected{
+                        background-color: rgb(236, 126, 126) !important;
+                    }
                     img{
                         width: 80%;
                     }
