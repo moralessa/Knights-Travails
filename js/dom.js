@@ -2,6 +2,12 @@ const knight = new Image();
 knight.src = '../img/knight-svgrepo-com.svg';
 
 function toggleSpace(target){
+    let selected = document.querySelectorAll('.selected');
+    selected.forEach(selection =>{
+        if(selection !== target){
+            selection.classList.remove('selected');
+        }
+    })
     target.classList.toggle('selected');
 }
 
@@ -16,7 +22,6 @@ function toggleButton(targetButton){
 }
 
 function fillSpace(target){
-    console.log(target.classList);
     target.appendChild(knight);
 }
 
