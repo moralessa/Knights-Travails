@@ -80,11 +80,20 @@ h1, h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  transition: all 250ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 
 .main-container .row .game-board .row .space.selected {
   background-color: #ec7e7e !important;
+}
+
+.main-container .row .game-board .row .space.move {
+  background-color: antiquewhite !important;
+}
+
+.main-container .row .game-board .row .space.final-move {
+  background-color: aquamarine !important;
 }
 
 .main-container .row .game-board .row .space img {
