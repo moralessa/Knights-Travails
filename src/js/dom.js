@@ -1,5 +1,6 @@
+import knightIcon from '../img/knight-svgrepo-com.svg'
 const knight = new Image();
-knight.src = '../img/knight-svgrepo-com.svg';
+knight.src = knightIcon;
 
 
 function clearDomPath(){

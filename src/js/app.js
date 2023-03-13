@@ -1,3 +1,4 @@
+import '../scss/style.scss'
 import { placeKnight, toggleButton, toggleSpace,  fillSpace, animateDomPath, clearDomPath } from "./dom.js";
 import { ChessBoard } from "./chessboard.js";
 

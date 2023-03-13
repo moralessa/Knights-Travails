@@ -55,7 +55,7 @@ export class ChessBoard{
     randomPosition(){ // function to create a random knight position
         let randomX = Math.floor(Math.random() * 8);
         let randomY = Math.floor(Math.random() * 8);
-        this.startingPosition = [randomX, randomY];    
+        this.setStartingPostion([randomX, randomY]);    
         return this.startingPosition;
     }
 
