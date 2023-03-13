@@ -10,5 +10,9 @@
     the fundamentals of binary search trees and shortest path algorithms. This project was built using HTML, SCSS, Javascript, Bootstrap,
     as well as using Webpack and npm to help manage assets. 
 </p>
-↠ <a href='#'>Live Demo<a/> ↞
+<p>
+    This project is part of 
+    <a href='https://www.theodinproject.com/lessons/javascript-knights-travails'>The Odin Project CS course.<a>
+</p>
+↠ <a href='https://moralessa.github.io/Knights-Travails/'>Live Demo<a/> ↞
 
