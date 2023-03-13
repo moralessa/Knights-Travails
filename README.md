@@ -1,5 +1,5 @@
 # Knights-Travails
-[Site Gif](./Knights_Travails.gif)
+![Site Gif](./Knights_Travails.gif)
 <p>
     Simple project that allows users to place a knight and their desired location anywhere on a chessboard.
     The app will then find the optimal path the knight must take for it to reach it's destination in the least
